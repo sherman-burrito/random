@@ -5,7 +5,25 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeRect(0, 0, 200, 100, "blue")
+    makeCircle(5, 95, 5, "purple")
+    makeCircle(20, 95, 5, "yellow")
+    makeCircle(35, 95, 5, "red")
+    makeCircle(50, 95, 5, "green")
+    makeCircle(65, 95, 5, "pink")
+    makeCircle(80, 95, 5, "cyan")
+    makeCircle(95, 95, 5, "purple")
+    makeCircle(110, 95, 5, "yellow")
+    makeCircle(125, 95, 5, "red")
+    makeCircle(140, 95, 5, "green")
+    makeCircle(155, 95, 5, "pink")
+    makeCircle(170, 95, 5, "cyan")
+    makeCircle(185, 95, 5, "gray")
+    makeEllipse(80, 50, 45, 25, "darkorange")
+    makePolygon("60 50 20 80 20 20", "darkorange")
+    makeCircle(100, 40, 5, "black", 0.5)
+    makeEllipse(103, 60, 15, 5, "black", 0.75)
+    makeRect(79, 50, 40, 12, "darkorange")
 }
 
 
@@ -13,7 +31,13 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeRect(0, 0, 200, 100, "lightseagreen")
+    makeEllipse(80, 50, 45, 25, "yellow")
+    makePolygon("60 50 20 80 20 20", "yellow")
+    makeCircle(100, 40, 5, "black", 0.5)
+    makeEllipse(103, 60, 15, 5, "black", 0.75)
+    makeRect(79, 50, 40, 12, "yellow")
+    makeText(X, 40, 5, 12, 'Roboto', "black")
 }
 
 
@@ -21,7 +45,15 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeRect(0, 0, 200, 100, "dodgerblue")
+    makeEllipse(80, 50, 45, 25, "red")
+    makePolygon("60 50 20 80 20 20", "red")
+    makeCircle(100, 40, 5, "black", 0.5)
+    makeEllipse(103, 60, 15, 5, "black", 0.75)
+    makeRect(79, 50, 40, 12, "red")
+    makeRect(69, 25, 40, 4, "black")
+    makeRect(75, 8, 29, 20, "black")
+    makeRect(75, 22, 29, 3, "white")
 }
 
 
@@ -31,20 +63,14 @@ function createThirdScene() {
 // FILL IN THIS FUNCTION!
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
-    // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
-    // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
-    // Else, call the function to create your third scene.
-    
-    
-    
+    var myNumber = Math.random()
+    if(myNumber < 0.33){
+    createFirstScene()
+    }else if(myNumber < 0.67){
+    createSecondScene()
+    }else{
+    createThirdScene()
+    }    
 }
 
 
