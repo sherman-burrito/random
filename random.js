@@ -29,15 +29,18 @@ function createFirstScene() {
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
     makeRect(0, 0, 200, 100, "lightseagreen")
-    makeEllipse(80, 50, 45, 25, "yellow")
-    makePolygon("60 50 20 80 20 20", "yellow")
+    makeRect(0, 65, 200, 100, "saddlebrown")
+    makeEllipse(80, 50, 40, 25, "yellow")
+    makePolygon("70 50 30 75 30 25", "yellow")
+    makePolygon("70 50 30 75 30 25", "yellow")
+    makeEllipse(108.5, 54, 10, 10, "black", 0.75)
+    makeEllipse(108.25, 50, 12, 10, "yellow")
     makeCircle(100, 40, 5, "black", 0.5)
-    makeEllipse(103, 60, 15, 5, "black", 0.75)
-    makeRect(79, 50, 40, 12, "yellow")
-    makeText(X, 40, 5, 12, 'Roboto', "black")
+    makeRect(150, 30, 5, 50, "green")
+    makeRect(160, 25, 5, 60, "green")
+    makeRect(170, 30, 5, 50, "green")
 }
 
 
@@ -46,6 +49,11 @@ function createSecondScene() {
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
     makeRect(0, 0, 200, 100, "dodgerblue")
+    makeCircle(160, 115, 50, "peru")
+    makeRect(163, 65, 40, 20, "peru")
+    makeRect(150, 57, 40, 25, "sienna")
+    makeRect(150, 65, 40, 4, "black")
+    makeRect(168, 65, 5, 5, "yellow")
     makeEllipse(80, 50, 45, 25, "red")
     makePolygon("60 50 20 80 20 20", "red")
     makeCircle(100, 40, 5, "black", 0.5)
